@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/webhook/deploy/iloveyou3000", function(req, res) {
-    shell.exec('./deploy-speed-debug.sh');
+    shell.exec('../deploy-speed-debug.sh');
     res.status(200).send("thanks");
 });
 
